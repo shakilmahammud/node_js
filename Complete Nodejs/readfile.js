@@ -5,5 +5,6 @@ fs.readFile('./test.json',(err,data)=>{
     if(err){
         return console.log(err)
     }
-    console.log(data)
-})
+    const obj = JSON.parse(data)
+    console.log(obj)
+}) 
