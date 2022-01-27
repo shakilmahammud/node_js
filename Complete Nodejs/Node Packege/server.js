@@ -1,5 +1,6 @@
 const express = require('express')
 const morgan = require('morgan')
+const router = require('./routes/router')
 const app = express();
 const PORT = process.env.PORT || 8000
 
@@ -9,7 +10,7 @@ const customMiddleware = (req,res,next)=>{
     next()
 }
 app.use(morgan('dev'))
-
+app.use('/user',router)
 app.get('/',(req,res)=>{
     res.json({
         message:'hello'
