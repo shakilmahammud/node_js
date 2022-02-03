@@ -38,6 +38,26 @@ router.get('/user',(req,res)=>{
 router.put('/user',(req,res)=>{
     res.send('update page')
 })
+router.post('/user',(req,res)=>{
+    res.send('update page')
+})
+router.get('/user',(req,res)=>{
+    res.send('update page')
+})
+router.put('/user',(req,res)=>{
+    res.send('update page')
+})
+
+router.post('/user',(req,res)=>{
+    res.send('update page')
+})
+router.get('/user',(req,res)=>{
+    res.send('update page')
+})
+router.put('/user',(req,res)=>{
+    res.send('update page')
+})
+
 
 
 
